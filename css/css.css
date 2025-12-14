@@ -1,239 +1,387 @@
 html, body{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
 }
 
 .container-fluid{
-    width: 100%;
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
 }
 
-.row{
-    margin: 0px;
+.container1{
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    padding-top: 20px !important;
+}
+
+
+
+.container2{
+    padding: 0px 40px !important;
+}
+
+.bg-img{
+    background-image: url('../imgs/golf2.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 660px;
 }
 
 .prima{
-    flex-shrink: 0;
-    height: 100px;
-    background-color: #1B221D;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border: 7px solid #000;
+    background: #FFF;
 }
 
 .logo{
-    width: 60px;
-    height: 60px;
-}
-
-.menu{
-    width: 60px;
-    height: 60px;
-}
-
-.ancore{
-    display: flex;
-}
-
-.menu-tendina{
-    display: none;
-}
-
-/* Items della navigazione */
-.nav-item {
-    margin: 0;
-    padding: 0;
-}
-
-.nav-link {
-    color: #00ff00;
-    font-family: "Jersey 15";
+    color: #000;
+    font-family: "Press Start 2P";
     font-size: 24px;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 8px;
-    padding: 8px;
-    white-space: nowrap;
+    padding: 0px;
 }
 
-.nav-link:hover {
-    color: #E2B61A;
+.nav-item{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-family: "Pixelify Sans";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0px;
+    background-color: #001AFF;
+    transition: background-color 0.3s ease;
+}
+
+.secondo-nav{
+    margin-left: 80px;
+}
+
+.ancore {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav-list {
-    list-style: none;
-    padding-left: 0;
-
     display: flex;
-    justify-content: center;
-    /* justify-content: flex-start; */
-    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
-@media (max-width: 600px){
-    .ancore{
-        display: none;
-    }
+.nav-item:hover{
+    background-color: #FF0000;
+}
 
-    .menu-tendina{
-        display:flex;
-    }
+.nav-list{
+    justify-content: end;
+}
 
-    .prima{
-        height: 60px;
-    }
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
 
-    .logo{
-        width: 36px;
-        height: 36px;
-    }
+h1{
+    color: #001AFF;
+    font-family: "Press Start 2P";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 30px;
+}
 
-    .menu{
-        width: 36px;
-        height: 36px;
-    }
+P{
+    color: #000;
+    font-family: "Pixelify Sans";
+    font-size: 24px;
+}
+
+.su-di-me{
+    padding-right: 20px;
+}
+
+.foto-mia{
+    justify-content: end;
+    padding: 0px;
 }
 
 .seconda{
-    height: 600px;
-    background-image: url(../imgs/sfondo.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.seconda h1{
-    color: #FFF;
-    font-family: "Jersey 10";
-    font-size: 128px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 80px;
-    margin-bottom: 20px;
-}
-
-.seconda h3{
-    color: #FFC700;
-    font-family: "Jersey 15";
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-}
-
-.nome{
-    display: inline;
-}
-
-.cognome{
-    display: inline;
-}
-
-.tutto{
-    display: none;
-}
-
-@media (max-width: 600px){
-    .seconda{
-        height: 450px;
-    }
-
-    .seconda h1{
-        font-size: 96px;
-        line-height: 60px;
-        margin-bottom: 10px;
-    }
-    
-    .seconda h3{
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 790px){
-    .nome{
-        display: none !important;
-    }
-
-    .cognome{
-        display: none !important;
-    }
-
-    .tutto{
-        display: block;
-    }
-}
-
-.continuo{
-    display: inline;
-}
-
-.introduzione-matteo{
-    padding: 0px;
-}
-
-.foto-matteo{
-    padding: 0px;
-}
-
-@media (max-width: 1024px){
-    .continuo{
-        display: none;
-    }
+    padding: 160px 0px;
+    align-items: flex-start;
 }
 
 .terza{
-    flex-shrink: 0;
-    background-color: #1B221D;
-    padding: 40px;
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
-h4{
-    color: #0F0;
-    font-family: "Jersey 15";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    padding-bottom: 27px;
+.carousel-container{
+    display: flex;
+    gap: 0px;
+    animation: scroll 20s linear infinite;
 }
 
-.terza p{
-    color: #FFF;
-    font-family: "Jersey 25";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 100% */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
-@media (max-width: 767px){
-    .terza{
-        padding: 20px;
-    }
+.carousel-item{
+    flex: 0 0 auto;
+    aspect-ratio: 1 / 1;
+    min-width: calc(100vw / 6);
+    height: 300px;
+}
 
-    .foto-matteo{
-        padding-top: 20px;
-    }
-
-    h4{
-        padding-bottom: 20px;
-    }
+.carousel-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .quarta{
-    flex-shrink: 0;
-    padding: 40px;
-    background: #0F0;
+    padding: 160px 0px;
+    background-color:#FF0000;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
-.quarta img{
+.quinta{
+    padding: 160px 0px;
+    background-color:#001AFF ;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.quinta h1{
+    color:#FF0000;
+    text-align: center;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.quinta p{
+    color: #FFF;
+    font-family: "Pixelify Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 100% */
+    position: relative;
+    z-index: 1;
+}
+
+.testo-hobby{
+    color: #000;
+    text-align: right;
+    font-family: "Pixelify Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 100% */
+    position: relative;
+    z-index: 1;
+}
+
+.project-img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    max-width: 400px;
+}
+
+h3{
+    color: #0F0;
+    text-align: center;
+    font-family: "Pixelify Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 83.333% */
+    padding: 10px 0px;
+}
+
+.xprima{
+        padding-top: 160px;
+    }
+
+.xultima{
+        padding-bottom: 160px;
+        margin-bottom: 0px !important
+    }
+
+
+.project-row{
+    margin-bottom: 100px;
+    align-items: flex-start;
+}
+
+.project-row h1{
+    color: #00ff00;
+    padding-top: 30px;
+}
+
+.footer{
+    padding: 160px 0px;
+    background-color: #001AFF;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.footer h3{
+    color: #FFF;
+    font-family: "Press Start 2P";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+
+.footer p{
+   color: #FFF;
+    font-family: "Press Start 2P";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer div{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.testo-hobby, .progetti-intro{
     padding: 0px;
 }
 
-@media (max-width: 767px){
-    .quarta{
-        padding: 20px;
-        padding-bottom: 0px;
+/* Media Queries - Responsive Design */
+@media (max-width: 769px) {
+    /* Padding adjustments */
+    .seconda, .quarta, .quinta, .x1, .footer {
+        padding: 50px 0px !important;
     }
 
-    .quarta img{
-        padding: 0px;
-        padding-bottom: 20px;
+    .quarta, .quinta, .footer {
+        padding: 50px 40px !important;
+    }
+
+    .xprima{
+        padding-top: 50px;
+    }
+
+    .xultima{
+        padding-bottom: 50px;
+    }
+
+    .project-row {
+        margin-bottom: 50px;
+    }
+
+    /* Font size adjustments */
+    h1 {
+        font-size: 24px;
+    }
+
+    .prima h2{
+        font-size: 20px;
+    }
+
+    P, .testo-hobby, .quinta p {
+        font-size: 16px;
+    }
+
+    /* Carousel adjustments */
+    .carousel-item {
+        height: 200px;
+    }
+
+    /* Photo adjustments */
+    .bg-img {
+        min-height: 530px;
+    }
+
+    .foto-mia {
+        max-width: 400px;
+        padding-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .prima {
+        padding: 10px;
+    }
+
+    .nav-item{
+        font-size: 18px;
+    }
+
+    .secondo-nav{
+        margin-left: 30px;
+    }
+
+    .project-img {
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .ultima{
+    margin-bottom: 0px !important;  
+    }
+
+    /* Footer text adjustments */
+    .footer h3 {
+        font-size: 24px;
+    }
+
+    .footer p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 375px) {
+    .nav-item{
+        display: none;
+    }
+
+    .bg-img{
+        min-height: 400px;
     }
 }
